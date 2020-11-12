@@ -91,6 +91,23 @@ $(document).ready(function() {
                     break;
             }
         }
+
+        var dodgeChance = 0.50;
+        var opponentRoll = Math.random();
+        console.log(`Opponent rolled ${opponentRoll}`);
+
+        // dodges or is hit
+        var opponentAction;
+
+        if (opponentRoll < dodgeChance) {
+            opponentAction = "dodges";
+        } else {
+            opponentAction = "is hit";
+        }
+
+        // conditional test ? value if true : value if false
+        var opponentAction2 = (opponentRoll < dodgeChance) ? "dodges" : "is hit";
+        $("#opponent").text(`Your opponent ${opponentAction}`);
     }
 
 });

@@ -74,6 +74,7 @@ $(document).ready(function() {
             } else {
                 $("#result").text("Your spell was adequate")
             }
+        }
 
             switch (selectedItem) {
                 case "ring":
@@ -90,7 +91,7 @@ $(document).ready(function() {
                     console.log("The mage used nothing");
                     break;
             }
-        }
+
     }
 
 });
